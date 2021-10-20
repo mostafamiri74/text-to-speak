@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Text TO Speak - Mostafa Miri</title>
+  </head>
+
+  <body class="text-white">
+    <form class="flex-column d-flex justify-content-between">
+      <div class="flex-md-row flex-column d-flex">
+        <div class="form-group col-md-6 pr-4">
+          <textarea
+            name=""
+            id="text-input"
+            rows="4"
+            cols="100"
+            class="form-control form-control-lg h-100"
+            placeholder="Type anything..."
+          ></textarea>
+        </div>
+        <div class="col-md-6">
+          <div class="mb-4 form-group">
+            <label for="rate">speed</label>
+            <div
+              id="rate-value"
+              class="
+                float-right
+                bg-white
+                d-flex
+                justify-content-center
+                align-items-center
+                rounded-circle
+                text-black-50
+                badge badge-primary
+              "
+            >
+              1
+            </div>
+            <input
+              type="range"
+              id="rate"
+              class="custom-range"
+              min="0.5"
+              max="2"
+              value="1"
+              step="0.1"
+            />
+          </div>
+          <div class="my-5 pb-md-5 form-group">
+            <label for="pitch">pitch</label>
+            <div
+              id="pitch-value"
+              class="
+                float-right
+                bg-white
+                d-flex
+                justify-content-center
+                align-items-center
+                rounded-circle
+                text-black-50
+                badge badge-primary
+              "
+            >
+              1
+            </div>
+            <input
+              type="range"
+              id="pitch"
+              class="custom-range"
+              min="0"
+              max="2"
+              value="1"
+              step="0.1"
+            />
+          </div>
+          <div class="mt-5 form-group">
+            <select
+              id="voice-select"
+              class="form-control form-control-lg"
+            ></select>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-light btn-block">speak</button>
+    </form>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>

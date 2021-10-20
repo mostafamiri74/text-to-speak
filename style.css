@@ -1,0 +1,16 @@
+body {
+  background: #2b0029;
+  height: auto;
+  padding: 5rem 3rem;
+  overflow: hidden;
+}
+
+.badge {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+button {
+  margin-top: 12rem;
+  padding: 1rem 0 !important;
+}
